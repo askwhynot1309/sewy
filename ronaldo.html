@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 100px auto;
+        display: block;
+        margin-left: 500px;
+    }
+    .button-area{
+        margin: 80px ;
+        display: block;
+        margin-left: 25px;
+    }
+    button{
+        padding: 8px 30px;
+        font-size: 20px;
+    }
+    img:hover {
+        animation: shake 1s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes shake {
+        0%{
+            transform: rotate(10deg);
+        }
+        25%{
+            transform: rotate(-10deg);
+        }
+        50%{
+            transform: rotate(10deg);
+        }
+        75%{
+            transform: rotate(-10deg);
+        }
+        100%{
+            transform: rotate(10deg);
+        }
+    }
+
+
+</style>
+
+<body>
+    <img id="img-area" src="ronaldo.jpg"
+    alt="RONALDO SIUU" style="width: 350px; height: 350px; ;">
+    <div class="button-area">
+        <button onclick="siu()">SIUUUUU</button>
+        <a href="drinking.mp4">
+            <button>SIPPING</button>
+        </a>
+        
+    </div>
+<script>
+    const audio = new Audio();
+    var img = document.getElementById("img-area");
+    function siu(){
+        img.src="sewy.jpg";
+        audio.src="SUIII.mp3";
+        audio.play();
+    }
+    
+  
+</script>
+
+</body>
+
+</html>
